@@ -21,7 +21,7 @@ var bstToGst = function(root) {
         return lSum + rSum + node.val;
     }
 
-    function traverse(node, value=26) {
+    function traverse(node, value) {
         if (node == null) return value;
         const lVal = traverse(node.left, value);
         
